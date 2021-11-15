@@ -5,7 +5,4 @@ jobs:
     name: TOC Generator
     runs-on: ubuntu-latest
     steps:
-      - name: TOC Generator
-        uses: technote-space/toc-generator@v2
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: technote-space/toc-generator@v4
