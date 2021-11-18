@@ -79,7 +79,17 @@ VerilogHDLの扱い、シミュレーション
 
 https://sites.google.com/site/playsystemverilog/
 
-の手順に従い、`ModelSimAltera`をインストールします。(インストールファイルは配布します)
+の手順に従い、`ModelSim`をインストールします。
+
+
+
+(公開時に削除)
+
+https://drive.google.com/file/d/1X2uY70ez27wvgCxB3hqmlao8dA3sdv7_/view?usp=sharing
+
+上記のリンクからModelSimをダウンロードし、インストールしてください。
+
+
 
 ModelSimは記述したハードウェアコード（Verilog)のコンパイラ＋シミュレータとなっています。ハードウェアでは波形表示で結果を見ることが多く、GUIソフトが必要となり結果としてファイルサイズなども大きくなってしまいます。ModelSimAlteraはフリーの古いソフトですが、今回の実験に必要な結果は得られるはずです。XIlinx社のVivadoの方が高性能ですが有料だったため今回は見送りました。
 
