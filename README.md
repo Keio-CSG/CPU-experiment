@@ -79,7 +79,13 @@ VerilogHDLの扱い、シミュレーション
 
 https://www.acri.c.titech.ac.jp/wordpress/archives/12916
 
+https://sites.google.com/site/playsystemverilog/
+
 の手順に従い、Vivadoをインストールします。
+
+Vivado Labをインストールしてください。
+
+![image-20211117205911471](C:\Users\kyosh\AppData\Roaming\Typora\typora-user-images\image-20211117205911471.png)
 
 * (インストールできたら)Vivado動作テスト
 
@@ -87,7 +93,7 @@ https://www.acri.c.titech.ac.jp/wordpress/archives/12916
 
 ### テキスト
 
-本セミナーでは**ディジタル回路設計とコンピュータアーキテクチャ[ARM版]**をベースに勉強します。
+本セミナーでは**ディジタル回路設計とコンピュータアーキテクチャ[ARM版]**をベースに勉強します。この本はCPUの作り方まで勉強できる上、比較的わかりやすく書かれています。
 
 3章までは必修のディジタル・アナログ回路の復習ですがデジタル回路は後半なのでまだ履修していないかもですね。
 
