@@ -77,17 +77,19 @@ VerilogHDLの扱い、シミュレーション
 
 * シミュレータ整備
 
-https://www.acri.c.titech.ac.jp/wordpress/archives/12916
-
 https://sites.google.com/site/playsystemverilog/
 
-の手順に従い、Vivadoをインストールします。
+の手順に従い、`ModelSimAltera`をインストールします。(インストールファイルは配布します)
 
-Vivado Labをインストールしてください。
+* (インストールできたら)ModelSimの動作テスト
 
-![image-20211117205911471](C:\Users\kyosh\AppData\Roaming\Typora\typora-user-images\image-20211117205911471.png)
+  ⇨`helloworld.v`を実行します
 
-* (インストールできたら)Vivado動作テスト
+* 半加算器をModelSimで動かそう
+
+  Verilogのテストベンチの書き方
+
+  https://www.macnica.co.jp/business/semiconductor/articles/intel/110605/
 
 * 教科書配布
 
@@ -112,3 +114,15 @@ Githubページ
 参考ページ Qiitaまとめる
 
 # 2日目
+
+工事中
+
+テキスト5-7章を読み進めながらModelSimで色々書こう
+
+# 3日目
+
+工事中
+
+テキスト8章を読みながらCPUを組もう！
+
+足し算を動かそう。RISC-Vの命令セットに改造しよう。
