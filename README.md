@@ -75,35 +75,39 @@ VerilogHDLの扱い、シミュレーション
 
 * Slack、githubを整備（行っているはず）
 
-* シミュレータ(Modelsim)の整備
+  ### シミュレータ(Modelsim)の準備
 
 https://sites.google.com/site/playsystemverilog/
 
 の手順に従い、`ModelSim`をインストールします。
 
-
-
-(公開時に削除)
-
 https://drive.google.com/file/d/1X2uY70ez27wvgCxB3hqmlao8dA3sdv7_/view?usp=sharing
 
-上記のリンクからModelSimをダウンロードし、インストールしてください。
+Windows、Linux使用の方は上記のリンクからModelSimをダウンロードし、インストールしてください。
 
 
 
 ModelSimは記述したハードウェアコード（Verilog)のコンパイラ＋シミュレータとなっています。ハードウェアでは波形表示で結果を見ることが多く、GUIソフトが必要となり結果としてファイルサイズなども大きくなってしまいます。ModelSimAlteraはフリーの古いソフトですが、今回の実験に必要な結果は得られるはずです。XIlinx社のVivadoの方が高性能ですが有料だったため今回は見送りました。
 
+
+
+(MACの方向け)
+
+https://qiita.com/RotaryKer/items/d8f6d218962c213b0577
+
+Brewでシミュレータが入ります。試してみてください。
+
+
+
 * (インストールできたら)ModelSimの動作テスト
 
-  ⇨`helloworld.v`を実行します
+  ⇨説明を元に`00_helloworld_verilog/helloworld.v`を実行してみましょう。
 
 * 半加算器をModelSimで動かそう
 
   （参考）Verilogのテストベンチの書き方
 
   https://www.macnica.co.jp/business/semiconductor/articles/intel/110605/
-
-* 教科書配布
 
 * (開発環境について）吉岡は`VScode`を使用してverilogを書いています。
   VerilogだけではなくPythonを書くに至っても文法チェックなど便利なのでよかったら入れてみてください。
@@ -112,7 +116,7 @@ ModelSimは記述したハードウェアコード（Verilog)のコンパイラ�
 
 * （参考）Verilogの書き方について
 
-  Verilogについて良い教科書はあまりないです。例えばQiitaのこの記事
+  Verilogについて良い教科書はあまりないです。。例えばQiitaのこの記事
 
   https://qiita.com/thtitech/items/8cc898dda7a10780f495
 
