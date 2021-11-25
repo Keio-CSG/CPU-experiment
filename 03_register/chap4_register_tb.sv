@@ -1,12 +1,11 @@
 
 // 4b レジスタのテストベンチ
-module addertest;
+module floptest;
     // テスト信号を定義
     reg [3:0] d;
     reg clk;
     wire [3:0] q;
 
-    // ここでは逐一ポートを割り当てています
     flop u1(.*);
 
     // 信号の動きを宣言
@@ -19,9 +18,9 @@ module addertest;
 
     // 周期変動
     // ノンブロッキング代入することで遷移を同時にする。
-    always #1
+    always #5
         clk = clk + 1;
-    always #10 // 5周期毎に+1
-        a <= a + 1;
+    always #1 
+        d <= d + 1;
     
 endmodule
