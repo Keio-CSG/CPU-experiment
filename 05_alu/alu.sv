@@ -1,4 +1,4 @@
-
+// 4則演算器のモジュールを定義
 module adder(
     input logic [31:0] a,
     input logic [31:0] b,
@@ -34,6 +34,7 @@ module divider(
     assign out = a / b;
 endmodule
 
+// 統合したALUモジュール
 module alu(
     input logic [31:0] a,
     input logic [31:0] b,
@@ -55,6 +56,7 @@ module alu(
     divider div(.a (a), .b (b), .out (y4));
 
     // 一つの出力を選択
+    // 4:1 multiplexer
     assign out = sel[1] ? (sel[0] ? y4 : y3)
             : (sel[0] ? y2 : y1);
 endmodule
