@@ -171,7 +171,15 @@ Slackで送った課題が終わっていない方は課題にチャレンジし
 
 # 3日目
 
-工事中
+吉岡TODO: 簡単な命令セットアーキテクチャを定義。
+
+必要な命令
+* Load　opcode=0
+* Store   opcode=1
+* Add      opcode=2
+* Subtract  opcode=3
+* Addimm opcode=4
+
 
 テキスト7章を読みながらシングルサイクルCPUを組もう！
 
