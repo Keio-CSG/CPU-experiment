@@ -10,7 +10,7 @@ module cpu_register(
 );
     logic [31:0] DATA [31:0];
     // 初期値
-    always @(*) begin
+    always @(posedge clk) begin
         DATA[0] = 49;
         DATA[1] = 7;
         DATA[2] = 3;

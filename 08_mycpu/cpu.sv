@@ -1,5 +1,4 @@
 // reg+ALUのみCPU
-
 module cpuv1(
     input logic clk,
     input logic [31:0] inst
@@ -15,7 +14,7 @@ module cpuv1(
     cpu_register r1(
         .addr1(addr1),
         .addr2(addr2),
-        .addrw(addr2),
+        .addrw(addrw),
         .writeen(writeen),
         .writeint(out),
         .RD1(a),
