@@ -70,6 +70,7 @@ module regista(input logic[4:0]addrw,
             DATA[addrw] <= (writeen) ? writeint:0;
 endmodule
 
+
 module cpu(input logic clk,
            input logic[31:0]inst);
 
@@ -86,10 +87,5 @@ module cpu(input logic clk,
        regista u7(.addr1(inst[12:8]),.addr2(inst[17:13]),.addrw(inst[22:18])
                   ,.writeint(y),.clk(clk),.RD1(a),.RD2(b),.writeen(writeen));
 
-endmodule    
+endmodule
                      
-                     
-
-
-
-
