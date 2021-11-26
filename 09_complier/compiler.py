@@ -39,5 +39,5 @@ print(type_r(0, 0, 1, 2))
 print(type_w(2, 2))
 
 # compute sub and store in $3
-print(type_r(0, 0, 1, 2))
+print(type_r(1, 0, 1, 2))
 
