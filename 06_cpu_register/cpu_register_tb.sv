@@ -28,12 +28,14 @@ module regtest;
 
     // 周期変動
     // ノンブロッキング代入することで遷移を同時にする。
-    always #1
+    always #1 begin
         writeint = writeint + 1;
-        addr1 = addr1 + 1;
-    always #2
         clk = clk + 1;
+    end
+    always #2 begin
+        addr1 = addr1 + 1;
         addr2 = addr2 + 1;
+    end
     always #5
         addrw = addrw + 1;
 endmodule
