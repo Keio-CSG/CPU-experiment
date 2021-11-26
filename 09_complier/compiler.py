@@ -18,10 +18,13 @@ def type_r(opcode, r1, r2, ro):
     return "0"*9 + get_bin(ro).zfill(5) + get_bin(r2).zfill(5) \
     + get_bin(r1).zfill(5) + get_bin(opcode).zfill(8)
 
-
 def type_l(memory, r):
     return "0"*9 + get_bin(memory).zfill(10) \
     + get_bin(r).zfill(5) + get_bin(4).zfill(8)
+
+def type_w(memory, r):
+    return "0"*9 + get_bin(memory).zfill(10) \
+    + get_bin(r).zfill(5) + get_bin(5).zfill(8)
 
 # load DATA[0] to $0
 print(type_l(0, 0))
@@ -32,5 +35,9 @@ print(type_l(1, 1))
 # compute adder and store in $2
 print(type_r(0, 0, 1, 2))
 
+# store results in DATA[2]
+print(type_w(2, 2))
+
 # compute sub and store in $3
 print(type_r(0, 0, 1, 2))
+
