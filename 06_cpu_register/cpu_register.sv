@@ -9,6 +9,12 @@ module cpu_register(
     output logic [31:0] RD2
 );
     logic [31:0] DATA [31:0];
+    // 初期値
+    always @(*) begin
+        DATA[0] = 49;
+        DATA[1] = 7;
+        DATA[2] = 3;
+    end
 
     assign RD1 = DATA[addr1];
     assign RD2 = DATA[addr2];
@@ -26,11 +32,13 @@ module cpu_memory(
 );
     logic [1023:0] DATA [31:0];
     // 実験用にRAMに数値を書き込みます。
-    DATA[0] = 49;
-    DATA[1] = 7;
-    DATA[2] = 2;
-
+    always @(*) begin
+        DATA[0] = 49;
+        DATA[1] = 7;
+        DATA[2] = 2;
+    end
+    // メモリ動作
     assign RD = DATA[addr];
     always @(posedge clk)
-        if (writeen) DATA[addrw] <= writeint;
+        if (writeen) DATA[addr] <= writeint;
 endmodule
