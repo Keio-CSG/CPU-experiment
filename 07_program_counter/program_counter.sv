@@ -18,7 +18,10 @@ module instruction_memory(
 );
 
     logic [255:0] INST [31:0];
-
+    // 実験用にデータを書き込みます。
+    INST[0] =  // DATA[0]をレジスタ[0]に読み込み
+               // DATA[1]をレジスタ[1]に読み込み
+               // reg[0] + reg[1]をreg[2]に書き込み
     assign instruction = INST[a];
 endmodule
     
